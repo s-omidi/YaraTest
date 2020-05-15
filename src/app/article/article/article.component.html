@@ -1,0 +1,11 @@
+<div class="articles"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item" fxFlex="80%" *ngIf="article">
+    <app-card [item]="article" [showMore]="false"></app-card>
+
+  </div>
+</div>

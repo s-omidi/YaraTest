@@ -1,0 +1,13 @@
+<mat-card class="item">
+  <mat-card-header>
+    <mat-card-title>{{item.title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{item.body | substring:80}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="showMore">
+    <a [routerLink]="['/Home/article', item.id]">more</a>
+  </mat-card-actions>
+</mat-card>
