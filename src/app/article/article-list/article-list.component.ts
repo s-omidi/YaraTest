@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Repository } from '../../core/services/Repository';
 
-import { IArticle } from 'src/app/core/models/User';
+import { IArticle } from 'src/app/core/models/Article';
 @Component({
   selector: 'app-article-list',
   templateUrl: './article-list.component.html',
